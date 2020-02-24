@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IsiProfilActivity">
+
+    <include layout="@layout/custom_actionbar_isi_profil"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.4"
+                android:text="Isi Biodata User"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginRight="12dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="* Upload Foto dan Ktp Max 500KB"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_margin="4dp">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/ivfoto"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:scaleType="centerCrop"-->
+                    <!--/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/uploadfoto"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="FOTO"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="#fff"-->
+                    <!--android:shadowColor="#000"-->
+                    <!--android:shadowRadius="2"-->
+                    <!--android:shadowDx="1"-->
+                    <!--android:shadowDy="1"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:background="@color/colorBlackOpacity"-->
+                    <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:id="@+id/ivktp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+
+                <TextView
+                    android:id="@+id/uploadktp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KTP"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:shadowColor="#000"
+                    android:shadowRadius="2"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorBlackOpacity"
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/etprofilnama"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Nama"
+            android:padding="10dp"
+            android:textSize="@dimen/font_medium"
+            android:gravity="center_vertical"
+            android:background="@drawable/style_bitellipse_strokeblack"
+            android:layout_marginBottom="8dp"
+            android:inputType="text"
+            />
+
+
+        <Spinner
+            android:id="@+id/etprofiljk"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="@dimen/font_medium"
+            android:gravity="center_vertical"
+            android:background="@drawable/style_bitellipse_strokeblack"
+            android:layout_marginBottom="8dp"
+            android:inputType="text">
+
+        </Spinner>
+
+        <EditText
+            android:id="@+id/etprofilnoktp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="No. KTP"
+            android:padding="10dp"
+            android:textSize="@dimen/font_medium"
+            android:gravity="center_vertical"
+            android:background="@drawable/style_bitellipse_strokeblack"
+            android:layout_marginBottom="8dp"
+            android:inputType="text"
+            />
+
+        <EditText
+            android:id="@+id/etprofilalamat"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Alamat"
+            android:padding="10dp"
+            android:textSize="@dimen/font_medium"
+            android:gravity="center_vertical"
+            android:background="@drawable/style_bitellipse_strokeblack"
+            android:layout_marginBottom="8dp"
+            android:inputType="text"
+            />
+        <EditText
+            android:id="@+id/etprofilprofesi"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Profesi"
+            android:padding="10dp"
+            android:textSize="@dimen/font_medium"
+            android:gravity="center_vertical"
+            android:background="@drawable/style_bitellipse_strokeblack"
+            android:layout_marginBottom="8dp"
+            android:inputType="text"
+            />
+
+        <EditText
+            android:id="@+id/etprofilinstansi"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Instansi"
+            android:padding="10dp"
+            android:textSize="@dimen/font_medium"
+            android:gravity="center_vertical"
+            android:background="@drawable/style_bitellipse_strokeblack"
+            android:layout_marginBottom="8dp"
+            android:inputType="text"
+            />
+        <EditText
+            android:id="@+id/etprofilnohp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="No. HP"
+            android:padding="10dp"
+            android:textSize="@dimen/font_medium"
+            android:gravity="center_vertical"
+            android:background="@drawable/style_bitellipse_strokeblack"
+            android:layout_marginBottom="8dp"
+            android:inputType="text"
+            />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:weightSum="2"
+            android:layout_marginTop="5dp"
+            >
+
+            <Button
+                android:id="@+id/btnresetprofil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reset"
+                android:textSize="@dimen/font_medium"
+                android:textColor="@color/colorOrangeMedium"
+                android:background="@drawable/style_register_edittext"
+                android:layout_marginRight="4dp"
+                />
+
+            <Button
+                android:id="@+id/btntambahprofil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tambah"
+                android:textSize="@dimen/font_medium"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/style_register_button"
+                android:layout_marginLeft="4dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

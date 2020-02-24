@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/ic_rectangle_67"
+    android:weightSum="1"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/login_title"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/font_small_large"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:drawableLeft="@drawable/logo_bpom"
+        android:drawablePadding="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!--Notif-->
+
+        <ImageView
+            android:id="@+id/UserNotif"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:src="@drawable/ic_notification"
+            android:scaleType="center"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:focusable="true"
+            />
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_count"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/notif_guru"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:layout_alignEnd="@+id/UserNotif"
+            android:gravity="center"
+            android:layout_alignRight="@+id/UserNotif" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

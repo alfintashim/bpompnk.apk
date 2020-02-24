@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pasal"
+        android:textAlignment="center"
+        android:textColor="@color/colorDarkBlack"
+        android:text="Pasal 28 ayat 1 UU ITE tentang menyebarkan berita bohong.
+        Setiap Orang dengan sengaja, dan tanpa hak menyebarkan berita bohong dan menyesatkan
+        yang mengakibatkan kerugian konsumen dalam Transaksi Elektronik.">
+</TextView>
+
+</LinearLayout>

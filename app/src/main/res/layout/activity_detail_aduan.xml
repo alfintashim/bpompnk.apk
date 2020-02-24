@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".DetailAduanActivity">
+
+    <include layout="@layout/custom_actionbar_detail_aduan"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+        <!--Content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+            <!--Header-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvnamaproduk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Makanan-Minuman"
+                    android:textSize="@dimen/font_small_medium"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/tvtanggalpengaduan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="06/03/1998 Melaporkan"
+                    android:textSize="@dimen/font_small_medium"
+                    />
+
+            </LinearLayout>
+
+            <!--Line-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBlackHint"
+                />
+
+            <!--body-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:weightSum="1"
+                >
+
+                <!--Logo-->
+                <TextView
+                    android:id="@+id/tvstatusaduan"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="16dp"
+                    android:text="P"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_small_large"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:background="@drawable/style_login_button"
+                    />
+
+                <!--Isi-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvjenis_produk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Indomie Kaldu"
+                        android:textSize="@dimen/font_small_medium"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvalamatbeli"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jalan Kenangan"
+                        android:textSize="@dimen/font_small"
+                        />
+                    <TextView
+                        android:id="@+id/tvstatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Selesai"
+                        android:textSize="@dimen/font_small"
+                        />
+
+                </LinearLayout>
+
+
+
+                <ImageView
+                    android:id="@+id/ivdetail"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/ic_filter"
+                    android:scaleType="center"
+                    android:tint="@color/colorBlack"
+                    android:layout_marginRight="16dp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="17sp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:text="Jawaban"/>
+
+            <EditText
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:padding="5dp"
+                android:textSize="@dimen/font_small_medium"
+                android:background="@drawable/style_bitellipse_strokeblack"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:lines="2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:scrollHorizontally="false"
+                android:id="@+id/etjawaban"
+                android:enabled="false"
+                />
+
+            <!--PDF Viewer-->
+            <WebView
+                android:id="@+id/pdfview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                />
+
+            <!--Button-->
+
+            <!--Button-->
+            <Button
+                android:id="@+id/btnwvaduan"
+                android:layout_width="200dp"
+                android:layout_height="38dp"
+                android:text="Lihat Lebih Luas"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/font_small_medium"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/style_login_button"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="17sp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:text="Kirim Pesan"/>
+
+
+
+            <EditText
+                android:id="@+id/etkomentar"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:padding="5dp"
+                android:textSize="@dimen/font_small_medium"
+                android:background="@drawable/style_bitellipse_strokeblack"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:lines="4"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:scrollHorizontally="false"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/btnkomentar"
+                android:layout_gravity="right"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/style_input_button"
+                android:text="Komentar"
+                android:textSize="12sp"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/llrv"
+                android:background="@drawable/style_bitellipse_strokeblack"
+                android:layout_marginRight="20dp"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:background="@drawable/style_ripple_effect_green"
+                    android:id="@+id/list_chat_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+
+
+            <!--Line-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBlackHint"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                />
+
+            <!--&lt;!&ndash;Lihat Kegiatan&ndash;&gt;-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/style_ripple_effect_green"
+                android:clickable="true"
+                android:layout_marginBottom="16dp"
+                >
+
+                <!--Logo-->
+                <ImageView
+                    android:id="@+id/ivdetaillaporan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/megaphone"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <!--Logo-->
+                <TextView
+                    android:id="@+id/tvlaporan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lihat Detail Laporan"
+                    android:textSize="@dimen/font_small_medium"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/ivdetaillaporan"
+                    android:layout_toEndOf="@+id/ivdetaillaporan"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengaduan"
+                    android:textSize="@dimen/font_small_medium"
+                    android:layout_below="@+id/tvlaporan"
+                    android:layout_toRightOf="@+id/ivdetaillaporan"
+                    android:layout_toEndOf="@+id/ivdetaillaporan"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

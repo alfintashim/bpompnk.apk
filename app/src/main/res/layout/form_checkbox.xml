@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="45px"
+    android:paddingRight="45px"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pasal"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="-3px"
+        android:textColor="@color/colorDarkBlack"
+        android:text="Pasal 28 ayat 1 UU ITE tentang menyebarkan berita bohong. Setiap Orang dengan sengaja, dan tanpa hak menyebarkan berita bohong dan menyesatkan yang mengakibatkan kerugian konsumen dalam Transaksi Elektronik.">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pesan"
+        android:layout_marginLeft="20px"
+        android:layout_below="@+id/pasal"
+        android:layout_marginTop="5px"
+        android:textAlignment="center"
+        android:textColor="@color/colorDarkBlack"
+        android:text="Apakah data yang dikirimkan sudah benar?">
+    </TextView>
+
+    <CheckBox
+        android:layout_below="@+id/pesan"
+        android:id="@+id/checkbox"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Setuju"
+        android:textColor="@color/colorDarkBlack"
+         />
+
+
+
+</RelativeLayout>

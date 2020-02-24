@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="74dp"
+    android:background="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="1">
+
+        <!--Isi-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="20dp"
+            >
+
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BPOM Mengadakan Inspeksi Mendadak"
+                android:textSize="@dimen/font_small_medium"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"
+                android:textColor="@color/colorPrimary"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="17dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/clock"/>
+
+                <TextView
+                    android:id="@+id/tanggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="17 November 2018"
+                    android:textSize="@dimen/font_small"
+                    android:clickable="true"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/colorBlack"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <!--Isi-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="16dp"
+            android:gravity="end"
+            >
+
+        <ImageView
+            android:layout_width="70dp"
+            android:clickable="true"
+            android:id="@+id/image"
+            android:layout_height="55dp"
+            />
+
+        </LinearLayout>
+
+        />
+
+
+    </LinearLayout>
+
+    <!--Line-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBlackHint"
+        />
+
+</LinearLayout>

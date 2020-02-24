@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="74dp"
+    android:background="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="1">
+
+        <!--Isi-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="20dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Produk : "
+                android:textSize="@dimen/font_small_medium"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"
+                android:textColor="@color/colorDarkBlack"
+                />
+
+            <TextView
+                android:id="@+id/tvlistIsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Indomie"
+                android:textSize="@dimen/font_small_medium"
+                android:textColor="@color/colorBlack"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+        <!--Isi-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="16dp"
+            android:gravity="end"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvWaktu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status:"
+                    android:textSize="@dimen/font_small"
+                    android:textStyle="bold"
+                    android:gravity="end"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/colorDarkBlack"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/tvdetailaduan"
+                android:layout_width="90dp"
+                android:layout_height="28dp"
+                android:text="DIPROSES"
+                android:textSize="@dimen/font_small_medium"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/style_detail"
+                android:paddingLeft="8dp"
+                android:paddingRight="4dp"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/ic_chevron_right"
+                />
+
+        </LinearLayout>
+
+        />
+
+
+    </LinearLayout>
+
+    <!--Line-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBlackHint"
+        />
+
+</LinearLayout>

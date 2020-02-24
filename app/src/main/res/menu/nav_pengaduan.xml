@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navBeranda"
+        android:icon="@drawable/ic_baseline_home_24px"
+        android:title="Beranda" />
+
+    <item
+        android:id="@+id/navInput"
+        android:icon="@drawable/ic_baseline_touch_app_24px"
+        android:title="Pengaduan"/>
+
+
+
+    <item
+        android:id="@+id/navBerita"
+        android:icon="@drawable/ic_baseline_assignment_24px"
+        android:title="Berita"/>
+
+    <item
+        android:id="@+id/navAkun"
+        android:icon="@drawable/ic_assignment_ind_24px"
+        android:title="Akun"/>
+</menu>

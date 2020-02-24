@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BPOM PNK</string>
+    <string name="login_user">Email/Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_button">Masuk</string>
+    <string name="login_register">Daftar</string>
+    <string name="register_nama">Nama</string>
+    <string name="register_username">Username</string>
+    <string name="register_email">Email</string>
+    <string name="register_password">Password</string>
+    <string name="login_title">e-Aduan</string>
+    <string name="judul_form">Upload dan isi Keterangan Form</string>
+    <string name="album_form">Album</string>
+    <string name="button_gambar">Foto Gambar</string>
+    <string name="et_1">Jenis Produk</string>
+    <string name="et_2">Nama Produk</string>
+    <string name="et_3">No. Reg</string>
+    <string name="et_4">Tanggal Kadarluasa</string>
+    <string name="et_5">Nama Pabrik</string>
+    <string name="et_6">Alamat Pabrik</string>
+    <string name="et_7">Nomor Batch</string>
+    <string name="et_8">Lokasi Beli</string>
+    <string name="et_9">Alamat Beli</string>
+    <string name="et_10">Tanggal Guna</string>
+    <string name="et_11">Info Tambahan</string>
+    <string name="et_12">Isi</string>
+    <string name="btn_reset">RESET</string>
+    <string name="btn_tambah">TAMBAH</string>
+    <string name="lat">Latitude</string>
+    <string name="lng">Longitude</string>
+</resources>

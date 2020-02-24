@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfilActivity">
+
+    <include
+        layout="@layout/custom_actionbar_profil"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <!--<ImageView-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:id="@+id/fototampil"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--/>-->
+
+        <ImageView
+            android:id="@+id/ktptampil"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/isiprofil"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/style_form_edittext"
+        android:text="Isi Profil"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:padding="8dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"
+            android:textSize="17sp"
+            android:textColor="@color/colorDarkBlack"
+            android:text="Nama Tampilan"/>
+        <TextView
+            android:id="@+id/namaprofil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:text=""/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBlackHint"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"
+            android:textSize="17sp"
+            android:textColor="@color/colorDarkBlack"
+            android:text="Nomor KTP"/>
+        <TextView
+            android:id="@+id/ktpprofil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:text=""/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorBlackHint"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"
+            android:textSize="17sp"
+            android:textColor="@color/colorDarkBlack"
+            android:text="Jenis Kelamin"/>
+        <TextView
+            android:id="@+id/jkprofil"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text=""/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorBlackHint"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"
+            android:textSize="17sp"
+            android:textColor="@color/colorDarkBlack"
+            android:text="Alamat"/>
+        <TextView
+            android:id="@+id/alamatprofil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:text=""/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorBlackHint"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"
+            android:textSize="17sp"
+            android:textColor="@color/colorDarkBlack"
+            android:text="Profesi"/>
+        <TextView
+            android:id="@+id/profesiprofil"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text=""/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorBlackHint"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"
+            android:textSize="17sp"
+            android:textColor="@color/colorDarkBlack"
+            android:text="Instansi"/>
+        <TextView
+            android:id="@+id/instansiprofil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:text=""/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorBlackHint"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp"
+            android:textSize="17sp"
+            android:textColor="@color/colorDarkBlack"
+            android:text="Nomor HP"/>
+        <TextView
+            android:id="@+id/hpprofil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:text=""/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
